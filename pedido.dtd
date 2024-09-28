@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/pedido.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE pedido SYSTEM "pedido.dtd">
+
+    <pedido>
+    ...
+    </pedido>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT pedido (destinatario|articulo|direccion|fechaEntrega)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT destinatario (nombre)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT nombre (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT articulo (nombre)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT direccion (calle|piso|letra)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT calle (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT piso (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT letra (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT fechaEntrega (#PCDATA)>

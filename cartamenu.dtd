@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/cartamenu.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE menu SYSTEM "cartamenu.dtd">
+
+    <menu>
+    ...
+    </menu>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT menu (comida)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT comida (nombre|precio|descripcion|calorias)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT nombre (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT precio (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT descripcion (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT calorias (#PCDATA)>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/arboles.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE arboles SYSTEM "arboles.dtd">
+
+    <arboles>
+    ...
+    </arboles>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT arboles (arbol)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT arbol (nombre_cientifico|nombre_comun|vegetacion|altura|forma_estructura|color_primavera|resistencia_heladas|color_otonio)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT nombre_cientifico (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT nombre_comun (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT vegetacion (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT altura (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT forma_estructura (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT color_primavera (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT resistencia_heladas (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT color_otonio (#PCDATA)>
